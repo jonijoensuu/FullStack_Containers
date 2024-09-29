@@ -1,0 +1,107 @@
+Script started on Sun Sep 29 16:52:04 2024
+OK
+Welcome to fish, the friendly interactive shell
+Type [32mhelp(B[m for instructions on how to use fish
+[?2004h]7;file://HOXFINJONJOENS.local/Users/jonijoensuu/fullstackopen-12/part12-containers-applications/todo-app/todo-backend]0;~/f/p/t/todo-backend[30m(B[m[92mjonijoensuu(B[m@(B[mHOXFINJONJOENS(B[m [32m~/f/p/t/todo-backend(B[m (main)(B[m> [K[56Cd[57C[38;2;255;221;115md[30m(B[m[57C[38;2;255;196;115mocker compose -f docker-compose.dev.yml up[30m(B[m[57C[38;2;255;221;115mo[38;2;255;196;115mcker compose -f docker-compose.dev.yml up[30m(B[m[58C[38;2;255;221;115mc[38;2;255;196;115mker compose -f docker-compose.dev.yml up[30m(B[m[59C[38;2;255;221;115mk[38;2;255;196;115mer compose -f docker-compose.dev.yml up[30m(B[m[60C[38;2;255;221;115me[38;2;255;196;115mr compose -f docker-compose.dev.yml up[30m(B[m[61C[38;2;255;221;115mr[38;2;255;196;115m compose -f docker-compose.dev.yml up[30m(B[m[62C[38;2;255;148;0mdocker[38;2;255;196;115m compose -f docker-compose.dev.yml up[30m(B[m[62C[38;2;255;148;0m [38;2;255;196;115mcompose -f docker-compose.dev.yml up[30m(B[m[63C [38;2;255;196;115mcompose -f docker-compose.dev.yml up[30m(B[m[63Cp[K[64C[38;2;255;196;115ms -a[30m(B[m[64C[38;2;255;192;0m[4mp[38;2;255;196;115m[24ms -a[30m(B[m[64C[38;2;255;192;0m[4ms[38;2;255;196;115m[24m -a[30m(B[m[65C[38;2;255;192;0mps[38;2;255;196;115m -a[30m(B[m[65C[38;2;255;192;0m [38;2;255;196;115m-a[30m(B[m[66C [38;2;255;196;115m-a[30m(B[m[66C-[38;2;255;196;115ma[30m(B[m[67C[38;2;255;192;0m-[38;2;255;196;115ma[30m(B[m[67C[38;2;255;192;0ma[30m(B[m[68C[68C[68C
+[30m(B[m[?2004l]0;docker ps -a ~/f/p/t/todo-backend[30m(B[mCONTAINER ID   IMAGE                                       COMMAND                  CREATED          STATUS                           PORTS                                                                                                                           NAMES
+e68acf41be43   mongo                                       "docker-entrypoint.s…"   37 minutes ago   Up 37 minutes                    0.0.0.0:3456->27017/tcp                                                                                                         todo-backend-mongo-1
+d989059f3ac8   ghcr.io/hoxhunt/hox/foundation-api:latest   "/app/packages/serve…"   5 days ago       Exited (137) About an hour ago                                                                                                                                   dev-task-system
+47ea21900eae   mongo:5.0                                   "bash -c 'chmod 400 …"   5 days ago       Exited (0) About an hour ago                                                                                                                                     dev-mongo-docker-network
+917e53e8aa96   mongo:5.0                                   "bash -c 'chmod 400 …"   5 days ago       Exited (0) About an hour ago                                                                                                                                     dev-mongo
+830f69ffcb9a   todo-backend                                "docker-entrypoint.s…"   7 days ago       Exited (137) 56 minutes ago                                                                                                                                      todo-backend-app-1
+9fb3d20de6cb   98bd4fddc9be                                "docker-entrypoint.s…"   7 days ago       Exited (137) 7 days ago                                                                                                                                          upbeat_poincare
+52bd4c307c91   ubuntu                                      "bash"                   7 days ago       Exited (0) 7 days ago                                                                                                                                            musing_ishizaka
+4917e04e5358   ghcr.io/hoxhunt/hox/server-hoxhash:latest   "/app/packages/serve…"   3 months ago     Exited (2) About an hour ago                                                                                                                                     dev-hoxhash
+b07a1a03f2f8   otel/opentelemetry-collector-contrib        "/otelcol-contrib --…"   6 months ago     Exited (0) About an hour ago                                                                                                                                     telemetry-otel-collector-agent-1
+1b1c6ddff4a7   otel/opentelemetry-collector-contrib        "/otelcol-contrib --…"   6 months ago     Up 2 days                        4317/tcp, 55678/tcp, 127.0.0.1:61277->13133/tcp, 127.0.0.1:61278->55679/tcp, 127.0.0.1:61279->55681/tcp                         telemetry-otel-collector-1
+3423213064d8   jaegertracing/all-in-one:latest             "/go/bin/all-in-one-…"   6 months ago     Up 2 days                        4317-4318/tcp, 5775/udp, 5778/tcp, 9411/tcp, 14268/tcp, 6831-6832/udp, 127.0.0.1:16686->16686/tcp, 127.0.0.1:61274->14250/tcp   telemetry-jaeger-all-in-one-1
+c2de3d57c7d8   ghcr.io/hoxhunt/hox/server-ioc:latest       "/usr/bin/python /ap…"   10 months ago    Exited (0) About an hour ago                                                                                                                                     dev-ioc
+[2m⏎(B[m                                                                                                                                                                                                                                                                                                                                                                         ⏎ [K[?2004h]0;~/f/p/t/todo-backend[30m(B[m[92mjonijoensuu(B[m@(B[mHOXFINJONJOENS(B[m [32m~/f/p/t/todo-backend(B[m (main)(B[m> [K[56Cd[57C[38;2;255;196;115mocker ps -a[30m(B[m[57C[38;2;255;221;115md[38;2;255;196;115mocker ps -a[30m(B[m[57C[38;2;255;221;115mo[38;2;255;196;115mcker ps -a[30m(B[m[58C[38;2;255;221;115mc[38;2;255;196;115mker ps -a[30m(B[m[59C[38;2;255;221;115mk[38;2;255;196;115mer ps -a[30m(B[m[60C[38;2;255;221;115me[38;2;255;196;115mr ps -a[30m(B[m[61C[38;2;255;221;115mr[38;2;255;196;115m ps -a[30m(B[m[62C[38;2;255;148;0mdocker[38;2;255;196;115m ps -a[30m(B[m[62C[38;2;255;148;0m [38;2;255;196;115mps -a[30m(B[m[63C [38;2;255;196;115mps -a[30m(B[m[63Ce[K[64C[38;2;255;192;0m[4me[30m(B[m[64C[38;2;255;196;115mxec -it 9bedee4d00fa /docker-entrypoint-initdb.d/rs-initiate.sh[30m(B[m[64C[38;2;255;192;0m[4mx[38;2;255;196;115m[24mec -it 9bedee4d00fa /docker-entrypoint-initdb.d/rs-initiate.sh[30m(B[m[65C[38;2;255;192;0m[4me[38;2;255;196;115m[24mc -it 9bedee4d00fa /docker-entrypoint-initdb.d/rs-initiate.sh[30m(B[m[66C[38;2;255;192;0m[4mc[38;2;255;196;115m[24m -it 9bedee4d00fa /docker-entrypoint-initdb.d/rs-initiate.sh[30m(B[m[67C[38;2;255;192;0mexec[38;2;255;196;115m -it 9bedee4d00fa /docker-entrypoint-initdb.d/rs-initiate.sh[30m(B[m[67C[38;2;255;192;0m [38;2;255;196;115m-it 9bedee4d00fa /docker-entrypoint-initdb.d/rs-initiate.sh[30m(B[m[68C [38;2;255;196;115m-it 9bedee4d00fa /docker-entrypoint-initdb.d/rs-initiate.sh[30m(B[m[68C-[38;2;255;196;115mit 9bedee4d00fa /docker-entrypoint-initdb.d/rs-initiate.sh[30m(B[m[69C[38;2;255;192;0m-[38;2;255;196;115mit 9bedee4d00fa /docker-entrypoint-initdb.d/rs-initiate.sh[30m(B[m[69C[38;2;255;192;0mi[38;2;255;196;115mt 9bedee4d00fa /docker-entrypoint-initdb.d/rs-initiate.sh[30m(B[m[70C[38;2;255;192;0mt[38;2;255;196;115m 9bedee4d00fa /docker-entrypoint-initdb.d/rs-initiate.sh[30m(B[m[71C[38;2;255;192;0m [38;2;255;196;115m9bedee4d00fa /docker-entrypoint-initdb.d/rs-initiate.sh[30m(B[m[72C [38;2;255;196;115m9bedee4d00fa /docker-entrypoint-initdb.d/rs-initiate.sh[30m(B[m[72Ct[K[73C[38;2;255;192;0mt[30m(B[m[73C[38;2;255;192;0mo[30m(B[m[74C[38;2;255;192;0md[30m(B[m[75C[38;2;255;192;0mo[30m(B[m[76C[38;2;255;192;0m-[30m(B[m[77C[38;2;255;192;0mb[30m(B[m[78C[38;2;255;192;0ma[30m(B[m[79C[38;2;255;192;0mc[30m(B[m[80C[38;2;255;192;0mk[30m(B[m[81C[38;2;255;192;0me[30m(B[m[82C[38;2;255;192;0mn[30m(B[m[83C[38;2;255;192;0md[30m(B[m[84C[38;2;255;192;0m-[30m(B[m[85C[38;2;255;192;0mm[30m(B[m[86C[38;2;255;192;0mo[30m(B[m[87C[38;2;255;192;0mn[30m(B[m[88C[38;2;255;192;0mg[30m(B[m[89C[38;2;255;192;0mo[30m(B[m[90C[38;2;255;192;0m-[30m(B[m[91C[38;2;255;192;0m1[30m(B[m[92C
+[30m(B[m[?2004l]0;docker exec -it todo ~/f/p/t/todo-backend[30m(B[m"docker exec" requires at least 2 arguments.
+See 'docker exec --help'.
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+Execute a command in a running container
+[2m⏎(B[m                                                                                                                                                                                                                                                                                                                                                                         ⏎ [K[?2004h]0;~/f/p/t/todo-backend[30m(B[m[92mjonijoensuu(B[m@(B[mHOXFINJONJOENS(B[m [32m~/f/p/t/todo-backend(B[m (main)(B[m (B[m[31m[[1m[31m1(B[m[31m](B[m(B[m> [K[60Cdocker exec -it todo-backend-mongo-1[96C[36D[38;2;255;148;0mdocker[30m(B[m [38;2;255;192;0mexec[30m(B[m [38;2;255;192;0m-it[30m(B[m [38;2;255;192;0mtodo-backend-mongo-1[30m(B[m[96C[38;2;255;192;0m [30m(B[m[97C[97C [97Cb[98C[38;2;255;192;0m[4mb[30m(B[m[98C[38;2;255;196;115min/[30m(B[m[98C[38;2;255;192;0m[4ma[30m(B[m[K[99C[38;2;255;192;0mba[30m(B[m[99C[38;2;255;192;0ms[30m(B[m[100C[38;2;255;192;0mh[30m(B[m[101C
+[30m(B[m[?2004l]0;docker exec -it todo ~/f/p/t/todo-backend[30m(B[m[?2004hroot@e68acf41be43:/# mongosh
+[?2004l]0;mongosh mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	66f95bcfa11500a0831681ec
+Connecting to:		[1m[32mmongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.3.1[0m
+Using MongoDB:		8.0.0
+[1m[33mUsing Mongosh[0m:		2.3.1
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+
+To help improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
+You can opt-out by running the disableTelemetry() command.
+
+[1G[0J [1G[1G[0Jtest> [7Gexit
+[?2004hroot@e68acf41be43:/# mnogo    ongosh u root      -u root -p example
+[?2004l]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	66f95bff0632afe2e11681ec
+Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.3.1[0m
+Using MongoDB:		8.0.0
+[1m[33mUsing Mongosh[0m:		2.3.1
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+[1G[0J [1G[1m[33m------[0m
+   [1m[33mThe server generated these startup warnings when booting[0m
+   2024-09-29T13:15:11.482+00:00: For customers running the updated tcmalloc-google memory allocator, we suggest setting the contents of sysfsFile to 'defer+madvise'
+   2024-09-29T13:15:11.482+00:00: We suggest setting the contents of sysfsFile to 0.
+   2024-09-29T13:15:11.482+00:00: Your system has glibc support for rseq built in, which is not yet supported by tcmalloc-google and has critical performance implications. Please set the environment variable GLIBC_TUNABLES=glibc.pthread.rseq=0
+   2024-09-29T13:15:11.482+00:00: vm.max_map_count is too low
+   2024-09-29T13:15:11.482+00:00: We suggest setting swappiness to 0 or 1, as swapping can cause performance problems.
+[1m[33m------[0m
+
+[1G[0Jtest> [7Gshow dbs
+[1madmin[0m         100.00 KiB
+[1mconfig[0m        108.00 KiB
+[1mlocal[0m          72.00 KiB
+[1mthe_database[0m   40.00 KiB
+[1G[0Jtest> [7Guse te[1G[0Jtest> use t[12Ghe_database
+switched to db the_database
+[1G[0Jthe_database> [15Gshow collections
+[1mtodos[0m
+[1G[0Jthe_database> [15Gdb.todos.find({})
+[
+  {
+    _id: ObjectId([32m'66f952ddcd8c8fc8601681ed'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'66f952ddcd8c8fc8601681ee'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gdb.todos.insertOne({text[33mtext[39m: [32m"[39m[32mI[39m[32mn[39m[32ms[39m[32me[39m[32mr[39m[32mt[39m[32mi[39m[32mn[39m[32mg[39m [32ma[39m [32mn[39m[32me[39m[32mw[39m [32mt[39m[32mo[39m[32md[39m[32mo[39m[32m"[39m, [32m"[39m[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Inserting a new todo"[39m, [65Gd[36mdo[39mdone: [32m"[39m[32mf[39m[32ma[39m[32ml[39m[32ms[39m[32me[39m[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Inserting a new todo"[39m, [33mdone[39m: [32m"fals[39m[76G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Inserting a new todo"[39m, [33mdone[39m: [32m"fal[39m[75G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Inserting a new todo"[39m, [33mdone[39m: [32m"fa[39m[74G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Inserting a new todo"[39m, [33mdone[39m: [32m"f[39m[73G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Inserting a new todo"[39m, [33mdone[39m: [32m"[39m[72G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Inserting a new todo"[39m, [33mdone[39m: [71Gfals[33mfalse[39m })
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId([32m'66f95c5d0632afe2e11681ed'[39m)
+}
+[1G[0Jthe_database> [15G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Inserting a new todo"[39m, [33mdone[39m: [33mfalse[39m })[79G[1G[0Jthe_database> db.todos.find({})[32G
+[
+  {
+    _id: ObjectId([32m'66f952ddcd8c8fc8601681ed'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'66f952ddcd8c8fc8601681ee'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId([32m'66f95c5d0632afe2e11681ed'[39m),
+    text: [32m'Inserting a new todo'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gexit
+[?2004hroot@e68acf41be43:/# exit
+[?2004lexit
+[2m⏎(B[m                                                                                                                                                                                                                                                                                                                                                                         ⏎ [K[?2004h]0;~/f/p/t/todo-backend[30m(B[m[92mjonijoensuu(B[m@(B[mHOXFINJONJOENS(B[m [32m~/f/p/t/todo-backend(B[m (main)(B[m> [K[56Ce[57C[38;2;255;196;115mxit[30m(B[m[57C[38;2;255;221;115me[38;2;255;196;115mxit[30m(B[m[57C[38;2;255;221;115mx[38;2;255;196;115mit[30m(B[m[58C[38;2;255;148;0mex[38;2;255;196;115mit[30m(B[m[58C[38;2;255;148;0mi[38;2;255;196;115mt[30m(B[m[59C[38;2;255;221;115mexi[38;2;255;196;115mt[30m(B[m[59C[38;2;255;221;115mt[30m(B[m[60C[60C[38;2;255;148;0mexit[30m(B[m[60C[60C
+[30m(B[m[?2004l]0;exit ~/f/p/t/todo-backend[30m(B[m[30m(B[m[?2004l
+Script done on Sun Sep 29 16:56:09 2024
