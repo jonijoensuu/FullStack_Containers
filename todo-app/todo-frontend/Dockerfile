@@ -8,10 +8,10 @@ RUN npm ci
 
 RUN npm test
 
-ENV VITE_BACKEND_URL=http://localhost:3000
-
 RUN npm run build
 
 RUN npm install -g serve
 
-CMD ["serve", "dist"]
+EXPOSE 5173
+
+CMD ["serve", "-s", "dist", "-l", "5173"]
